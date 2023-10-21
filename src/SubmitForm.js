@@ -4,18 +4,15 @@ import * as Yup from 'yup';
 import styles from './SubmitForm.css';
 
 const SubmitForm = () => {
-  // Form validation schema using Yup
   const validationSchema = Yup.object({
     name: Yup.string().required('Name is required'),
     email: Yup.string().email('Invalid email address').required('Email is required'),
     phone: Yup.string().required('Phone number is required'),
   });
 
-  // Form submission logic
+
   const onSubmit = (values, { resetForm }) => {
-    // Send form data to the server or mock server/API
-    // Display success message
-    // Clear the form fields
+    
   };
 
   return (
